@@ -1,4 +1,4 @@
--- Vorarbeit fuer die Abfrageaufgaben -- 
+-- Vorarbeit fuer die Abfrageaufgaben mit Usernamen und Passwörtern -- 
 
 CREATE TABLE `schuhler` (
   `s_ID` int(11) NOT NULL,
@@ -8,16 +8,18 @@ CREATE TABLE `schuhler` (
   `s_erstWahl` int(11) DEFAULT NULL,
   `s_zweitWahl` int(11) DEFAULT NULL,
   `s_drittWahl` int(11) DEFAULT NULL,
+  `s_Username` varchar(50) DEFAULT NULL,
+  `s_Password` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`s_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`,`s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`) VALUES
-(1, 'Fiur', 'Jan', 10, 3, 5, 2),
-(2, 'Carstens', 'Max', 9, 5, 1, 4),
-(3, 'Huß', 'Lena', 11, 3, 1, 2),
-(4, 'Bolleininger', 'Larissa', 13, 1, 2, 3),
-(5, 'Stahl', 'Elias', 9, 4, 2, 1),
-(6, 'Kisla', 'Sahin', 10, 5, 1, 3);
+INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`,`s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`, `s_Username`, `s_Password`) VALUES
+(1, 'Fiur', 'Jan', 10, 3, 5, 2, 'fiurj', 'amongus123'),
+(2, 'Carstens', 'Max', 9, 5, 1, 4, 'carstensm', 'password456'),
+(3, 'Huß', 'Lena', 11, 3, 1, 2, 'hussl', 'letmein789'),
+(4, 'Bolleininger', 'Larissa', 13, 1, 2, 3, 'bolleiningerl', 'qwertzuiop'),
+(5, 'Stahl', 'Elias', 9, 4, 2, 1, 'stahl', 'asdfghjkl'),
+(6, 'Kisla', 'Sahin', 10, 5, 1, 3, 'kislas', 'zxcvbnm');
 
 -- Erstellung der Kurse --
 
@@ -76,8 +78,7 @@ GROUP BY s.s_Klasse;
 
 -- Erstelle einen neuen Kurs --
 
-INSERT INTO `kurse` (`k_ID`, `k_Name`, `k_MaxTeilnehmer`) VALUES
-(7, 'Python Programmierung', 10);
+INSERT INTO `kurse` (`k_ID`, `k_Name`, `k_MaxTeilnehmer`) VALUES (7, 'Python Programmierung', 10);
 
 -- Lösche einen Kurs -- 
 
