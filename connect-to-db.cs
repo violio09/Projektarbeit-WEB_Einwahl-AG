@@ -5,11 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        string server   = "34.32.109.127";
-        string port     = "3306";
-        string username = "testing-Csharp";
-        string password = "Maximum2004?";
-        string database = "einwahlkurs"; 
+        string server   = "SERVER-IP";
+        string port     = "SERVER-PORT";
+        string username = "USERNAME";
+        string password = "PASSWORD";
+        string database = "DB"; 
 
         string connectionString = $"SERVER={server};PORT={port};DATABASE={database};UID={username};PASSWORD={password};";
 
