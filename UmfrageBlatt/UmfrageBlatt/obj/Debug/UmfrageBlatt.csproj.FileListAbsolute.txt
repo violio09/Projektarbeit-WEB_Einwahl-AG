@@ -1,0 +1,16 @@
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\bin\Debug\UmfrageBlatt.exe.config
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\bin\Debug\UmfrageBlatt.exe
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\bin\Debug\UmfrageBlatt.pdb
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.csproj.AssemblyReference.cache
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\MainWindow.g.cs
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\App.g.cs
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt_MarkupCompile.cache
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt_MarkupCompile.lref
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\MainWindow.baml
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.g.resources
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.Properties.Resources.resources
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.csproj.GenerateResource.cache
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.csproj.CoreCompileInputs.cache
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.exe
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.pdb
+C:\Users\maxca\source\repos\UmfrageBlatt\UmfrageBlatt\obj\Debug\UmfrageBlatt.exe.config
