@@ -1,0 +1,8 @@
+<TextBox Name="TextBox1"
+         HorizontalScrollBarVisibility="Auto"
+         VerticalScrollBarVisibility="Auto"
+         TextWrapping="NoWrap"
+         AcceptsReturn="True"
+         FontFamily="Consolas"
+         FontSize="12"
+         IsReadOnly="True"/>
