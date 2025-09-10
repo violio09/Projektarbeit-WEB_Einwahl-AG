@@ -28,33 +28,52 @@ namespace WPF.Einloggen
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+{
+    string server = "34.32.109.127";
+    string port = "3306";
+    string username = "lehrer-access";
+    string password = "dlEM43RTfB0ea?";
+    string database = "einwahlkurs";
+
+    string connectionString = $"SERVER={server};PORT={port};DATABASE={database};UID={username};PASSWORD={password};";
+
+    using (MySqlConnection connection = new MySqlConnection(connectionString))
+    {
+        connection.Open();
+
+        string query = "SELECT * FROM schuhler;";
+        MySqlCommand cmd = new MySqlCommand(query, connection);
+
+        using (MySqlDataReader reader = cmd.ExecuteReader())
         {
-            string server = "34.32.109.127";
-            string port = "3306";
-            string username = "lehrer-access";
-            string password = "dlEM43RTfB0ea?";
-            string database = "einwahlkurs";
+            StringBuilder sb = new StringBuilder();
 
-            string connectionString = $"SERVER={server};PORT={port};DATABASE={database};UID={username};PASSWORD={password};";
-
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            // Kopfzeile mit Spaltennamen
+            for (int i = 0; i < reader.FieldCount; i++)
             {
-                connection.Open();
-
-                string query = "SELECT * FROM schuhler;";
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                using (MySqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        for (int i = 0; i < reader.FieldCount; i++)
-                        {
-                            TextBox1.Text = $"{reader[i]}".ToString();
-                        }
-                    }
-                }
+                sb.Append(reader.GetName(i).PadRight(15)); // Spaltenname mit Abstand
+                sb.Append("| ");
             }
+            sb.AppendLine();
+            sb.AppendLine(new string('-', reader.FieldCount * 17));
+
+            // Datenzeilen
+            while (reader.Read())
+            {
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    sb.Append(reader[i].ToString().PadRight(15));
+                    sb.Append("| ");
+                }
+                sb.AppendLine();
+            }
+
+            // Ausgabe in die TextBox
+            TextBox1.Text = sb.ToString();
+        }
+    }
+}
+
         }
     }
 }
