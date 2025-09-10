@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\maxca\\source\\repos\\UmfrageBlatt\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|c:\\users\\maxca\\source\\repos\\umfrageblatt\\umfrageblatt\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|c:\\users\\user\\documents\\github\\projektarbeit-web_einwahl-ag\\umfrageblatt\\umfrageblatt\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|solutionrelative:umfrageblatt\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|c:\\users\\maxca\\source\\repos\\umfrageblatt\\umfrageblatt\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\umfrageblatt\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC66748F-4317-445E-A56F-EC8A2EC68091}|UmfrageBlatt\\UmfrageBlatt.csproj|solutionrelative:umfrageblatt\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\maxca\\source\\repos\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml",
               "RelativeDocumentMoniker": "UmfrageBlatt\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\maxca\\source\\repos\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml",
               "RelativeToolTip": "UmfrageBlatt\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-09T07:39:44.666Z",
@@ -40,14 +40,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxca\\source\\repos\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "UmfrageBlatt\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\maxca\\source\\repos\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\UmfrageBlatt\\UmfrageBlatt\\MainWindow.xaml.cs",
               "RelativeToolTip": "UmfrageBlatt\\MainWindow.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwCgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T07:39:44.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T07:39:44.063Z"
             }
           ]
         }
