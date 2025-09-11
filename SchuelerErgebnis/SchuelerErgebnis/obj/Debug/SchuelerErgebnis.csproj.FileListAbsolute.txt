@@ -1,0 +1,15 @@
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\bin\Debug\SchuelerErgebnis.exe.config
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\bin\Debug\SchuelerErgebnis.exe
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\bin\Debug\SchuelerErgebnis.pdb
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.csproj.AssemblyReference.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\MainWindow.g.cs
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\App.g.cs
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis_MarkupCompile.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis_MarkupCompile.lref
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\MainWindow.baml
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.g.resources
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.Properties.Resources.resources
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.csproj.GenerateResource.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.csproj.CoreCompileInputs.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.exe
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerErgebnis\SchuelerErgebnis\obj\Debug\SchuelerErgebnis.pdb

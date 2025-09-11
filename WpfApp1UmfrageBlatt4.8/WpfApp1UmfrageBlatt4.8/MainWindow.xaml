@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UmfrageBlatt"
         mc:Ignorable="d"
-        Title="Umfrage Blatt // Schüler" Height="600" Width="800"
-        ResizeMode="NoResize">
+        Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <Style x:Key="TextBoxWithPlaceholder" TargetType="TextBox">
             <Setter Property="Template">
@@ -37,14 +36,22 @@
         </Style>
     </Window.Resources>
     <Grid RenderTransformOrigin="0.553,0.405">
-        <TextBox x:Name="txtSchuhlerId" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Schüler-ID" HorizontalAlignment="Left" Margin="35,95,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="txtVorname" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Vorname" HorizontalAlignment="Left" Margin="35,122,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="txtNachname" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Nachname" HorizontalAlignment="Left" Margin="35,149,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="txtKlassenstufe" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Klassenstufe" HorizontalAlignment="Left" Margin="35,176,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="txtUsername" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Username" HorizontalAlignment="Left" Margin="35,203,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="txtPasswort" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Passwort" HorizontalAlignment="Left" Margin="35,230,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="txtVorname" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Vorname" HorizontalAlignment="Left" Margin="190,108,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="txtNachname" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Nachname" HorizontalAlignment="Left" Margin="190,142,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="txtKlassenstufe" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Klassenstufe" HorizontalAlignment="Left" Margin="190,176,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="txtUsername" Style="{StaticResource TextBoxWithPlaceholder}" Tag="username" HorizontalAlignment="Left" Margin="190,210,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
 
-        <Grid HorizontalAlignment="Left" Margin="190,244,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <Grid HorizontalAlignment="Left" Margin="190,244,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <PasswordBox Name="password" Width="120" Height="22"
+                 PasswordChanged="PasswordBox_PasswordChanged"/>
+            <TextBlock x:Name="PasswordPlaceholder"
+               Text="Passwort"
+               Foreground="Gray"
+               Margin="5,0,0,0"
+               VerticalAlignment="Center"
+               IsHitTestVisible="False"
+               Visibility="Visible"/>
+        </Grid>
 
 
 
@@ -56,19 +63,17 @@
 
 
 
-        <Label Content="Erstwahl" HorizontalAlignment="Left" Margin="420,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.169,0.271"/>
-        <ComboBox x:Name="cmbErstwahl" HorizontalAlignment="Left" Margin="497,340,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Erstwahl" HorizontalAlignment="Left" Margin="542,107,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbErstwahl" HorizontalAlignment="Left" Margin="542,131,0,0" VerticalAlignment="Top" Width="120"/>
 
-        <Label Content="Zweitwahl" HorizontalAlignment="Left" Margin="415,376,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbZweitwahl" HorizontalAlignment="Left" Margin="497,380,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Zweitwahl" HorizontalAlignment="Left" Margin="542,172,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbZweitwahl" HorizontalAlignment="Left" Margin="542,196,0,0" VerticalAlignment="Top" Width="120"/>
 
-        <Label Content="Drittwahl" HorizontalAlignment="Left" Margin="415,413,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbDrittwahl" HorizontalAlignment="Left" Margin="497,417,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Drittwahl" HorizontalAlignment="Left" Margin="542,237,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbDrittwahl" HorizontalAlignment="Left" Margin="542,261,0,0" VerticalAlignment="Top" Width="120"/>
 
-        <Button Content="Ausgeben" HorizontalAlignment="Left" Margin="35,303,0,0" VerticalAlignment="Top" Width="120" Click="BtnAusgeben_Click"/>
-        <TextBox x:Name="txtAusgabe" HorizontalAlignment="Left" Margin="35,376,0,0" VerticalAlignment="Top" Width="253" Height="164" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True"/>
-        <Button Name="PushDBButton" Content="Push to DB" HorizontalAlignment="Left" Margin="35,340,0,0" VerticalAlignment="Top" Width="120" Click="PushDBButton_Click"/>
-        <TextBox Name="TextBox1" HorizontalAlignment="Left" Margin="226,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="507" Height="184"/>
+        <Button Content="Ausgeben" HorizontalAlignment="Left" Margin="190,340,0,0" VerticalAlignment="Top" Width="120" Click="BtnAusgeben_Click"/>
+        <TextBox x:Name="txtAusgabe" HorizontalAlignment="Left" Margin="330,340,0,0" VerticalAlignment="Top" Width="300" Height="80" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True"/>
 
 
     </Grid>
