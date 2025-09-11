@@ -5,62 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchuelerErgebnis"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Kurszuteilung" Height="500" Width="800" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-    <Window.Resources>
-        <Style x:Key="TextBoxWithPlaceholder" TargetType="TextBox">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TextBox">
-                        <Grid>
-                            <ScrollViewer x:Name="PART_ContentHost"/>
-                            <TextBlock x:Name="Placeholder"
-                                   Text="{TemplateBinding Tag}"
-                                   Foreground="Gray"
-                                   Margin="5,0,0,0"
-                                   VerticalAlignment="Center"
-                                   IsHitTestVisible="False"
-                                   Visibility="Collapsed"/>
-                        </Grid>
-                        <ControlTemplate.Triggers>
-                            <!-- Placeholder anzeigen, wenn Text leer und nicht fokussiert -->
-                            <MultiTrigger>
-                                <MultiTrigger.Conditions>
-                                    <Condition Property="Text" Value=""/>
-                                    <Condition Property="IsKeyboardFocused" Value="False"/>
-                                </MultiTrigger.Conditions>
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
-                            </MultiTrigger>
-                            <!-- Placeholder ausblenden, wenn Text vorhanden oder Feld fokussiert -->
-                            <Trigger Property="Text" Value="">
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
-                            </Trigger>
-                            <Trigger Property="Text" Value="{x:Null}">
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Collapsed"/>
-                            </Trigger>
-                            <Trigger Property="Text" Value="">
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
-                            </Trigger>
-                            <Trigger Property="Text" Value="{x:Null}">
-                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+        <Button x:Name="BTNAusgaben" Grid.Row="0" Content="Kurszuteilung starten und Ergebnisse anzeigen" 
+                Click="BTNAusgaben_Click" Padding="10" FontWeight="Bold"/>
 
-    <Grid>
-        <TextBox x:Name="username" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Username" HorizontalAlignment="Left" Margin="91,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="password" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Password"  HorizontalAlignment="Left" Margin="91,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="schuelerid" Style="{StaticResource TextBoxWithPlaceholder}" Tag="ID"  HorizontalAlignment="Left" Margin="91,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Meine AG anzeigen" HorizontalAlignment="Left" Margin="91,169,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="txtausgabeblock" HorizontalAlignment="Left" Margin="324,70,0,0" TextWrapping="Wrap" Text="Ausgabe" VerticalAlignment="Top" Height="66" Width="206"/>
+        <TabControl x:Name="MainTabControl" Grid.Row="1" Margin="0,10,0,0">
+            <TabItem Header="Protokoll">
+                <ListBox x:Name="ProtokollListBox"/>
+            </TabItem>
+            <TabItem Header="Ergebnisse" x:Name="ErgebnisTab">
+                <DataGrid x:Name="ErgebnisDataGrid" 
+                          IsReadOnly="True" 
+                          AutoGenerateColumns="True"
+                          AlternatingRowBackground="LightGray"/>
+            </TabItem>
+        </TabControl>
 
+        <TextBlock x:Name="StatusTextBlock" Grid.Row="2" Text="Bereit." Margin="0,5,0,0"/>
 
     </Grid>
 </Window>

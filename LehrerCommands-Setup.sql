@@ -1,4 +1,4 @@
--- Vorarbeit fuer die Abfrageaufgaben mit Usernamen und Passwörtern -- 
+-- Vorarbeit fuer die Abfrageaufgaben mit Usernamen und Passwörtern und einem Platz für Timestamps -- 
 
 CREATE TABLE `schuhler` (
   `s_ID` int(11) NOT NULL,
@@ -10,6 +10,7 @@ CREATE TABLE `schuhler` (
   `s_drittWahl` int(11) DEFAULT NULL,
   `s_Username` varchar(50) DEFAULT NULL,
   `s_Password` varchar(50) DEFAULT NULL,
+  `s_Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`s_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -20,6 +21,7 @@ INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`,`s_Klasse`, `s_erstWahl`, 
 (4, 'Bolleininger', 'Larissa', 13, 1, 2, 3, 'bolleiningerl', 'qwertzuiop'),
 (5, 'Stahl', 'Elias', 9, 4, 2, 1, 'stahl', 'asdfghjkl'),
 (6, 'Kisla', 'Sahin', 10, 5, 1, 3, 'kislas', 'zxcvbnm');
+
 
 -- Erstellung der Kurse --
 
