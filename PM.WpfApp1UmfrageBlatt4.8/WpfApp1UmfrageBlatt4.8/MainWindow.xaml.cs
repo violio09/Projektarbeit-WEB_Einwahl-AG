@@ -143,6 +143,8 @@ namespace UmfrageBlatt
 
                 string query = $"INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`, `s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`, `s_Username`, `s_Password`) VALUES ({schuhlerId}, '{nachname}', '{vorname}',{klassenstufe},{erstwahl},{zweitwahl},{drittwahl}, '{benutzer}', '{passwort}');";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                cmd.ExecuteNonQuery();
             }
             MessageBox.Show("Daten wurden in die Datenbank eingetragen.");
         }
