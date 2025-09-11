@@ -7,28 +7,46 @@
         mc:Ignorable="d"
         Title="Umfrage Blatt // Schüler" Height="600" Width="800"
         ResizeMode="NoResize">
+    
     <Window.Resources>
         <Style x:Key="TextBoxWithPlaceholder" TargetType="TextBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
-
                         <Grid>
                             <ScrollViewer x:Name="PART_ContentHost"/>
                             <TextBlock x:Name="Placeholder"
-                                       Text="{TemplateBinding Tag}"
-                                       Foreground="Gray"
-                                       Margin="5,0,0,0"
-                                       VerticalAlignment="Center"
-                                       IsHitTestVisible="False"
-                                       Visibility="Visible"/>
+                                   Text="{TemplateBinding Tag}"
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="Collapsed"/>
                         </Grid>
                         <ControlTemplate.Triggers>
+                            <!-- Placeholder anzeigen, wenn Text leer und nicht fokussiert -->
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                    <Condition Property="IsKeyboardFocused" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
+                            </MultiTrigger>
+                            <!-- Placeholder ausblenden, wenn Text vorhanden oder Feld fokussiert -->
                             <Trigger Property="Text" Value="">
+                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
                                 <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
                             </Trigger>
                             <Trigger Property="IsKeyboardFocused" Value="True">
                                 <Setter TargetName="Placeholder" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter TargetName="Placeholder" Property="Visibility" Value="Visible"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -36,6 +54,7 @@
             </Setter>
         </Style>
     </Window.Resources>
+    
     <Grid RenderTransformOrigin="0.553,0.405">
         <TextBox x:Name="txtSchuhlerId" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Schüler-ID" HorizontalAlignment="Left" Margin="35,95,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
         <TextBox x:Name="txtVorname" Style="{StaticResource TextBoxWithPlaceholder}" Tag="Vorname" HorizontalAlignment="Left" Margin="35,122,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
