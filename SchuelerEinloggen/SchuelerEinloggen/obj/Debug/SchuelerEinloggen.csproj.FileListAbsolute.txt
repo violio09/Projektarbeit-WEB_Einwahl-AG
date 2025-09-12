@@ -1,0 +1,15 @@
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\bin\Debug\SchuelerEinloggen.exe.config
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\bin\Debug\SchuelerEinloggen.exe
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\bin\Debug\SchuelerEinloggen.pdb
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.csproj.AssemblyReference.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\MainWindow.g.cs
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\App.g.cs
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen_MarkupCompile.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen_MarkupCompile.lref
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\MainWindow.baml
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.g.resources
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.Properties.Resources.resources
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.csproj.GenerateResource.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.csproj.CoreCompileInputs.cache
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.exe
+C:\Users\Mad Max\Documents\GitHub\Projektarbeit-WEB_Einwahl-AG\SchuelerEinloggen\SchuelerEinloggen\obj\Debug\SchuelerEinloggen.pdb
