@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\schuelerergebnis\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|solutionrelative:schuelerergebnis\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\schuelerergebnis\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|solutionrelative:schuelerergebnis\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|c:\\users\\gamer\\documents\\github\\projektarbeit-web_einwahl-ag\\schuelerergebnis\\schuelerergebnis\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|solutionrelative:schuelerergebnis\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|c:\\users\\user\\documents\\github\\projektarbeit-web_einwahl-ag\\schuelerergebnis\\schuelerergebnis\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89AD5A6D-918D-4EC0-A3E6-1FDB0DE90829}|SchuelerErgebnis\\SchuelerErgebnis.csproj|solutionrelative:schuelerergebnis\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SchuelerErgebnis\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml",
               "RelativeToolTip": "SchuelerErgebnis\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-10T11:14:59.151Z",
@@ -34,13 +38,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SchuelerErgebnis\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gamer\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Projektarbeit-WEB_Einwahl-AG\\SchuelerErgebnis\\SchuelerErgebnis\\MainWindow.xaml.cs",
               "RelativeToolTip": "SchuelerErgebnis\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAgwLYAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T11:14:56.103Z",
               "EditorCaption": ""

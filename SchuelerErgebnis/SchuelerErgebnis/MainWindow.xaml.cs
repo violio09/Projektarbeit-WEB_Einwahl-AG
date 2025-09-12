@@ -8,14 +8,11 @@ namespace SchuelerErgebnis
 {
     public partial class MainWindow : Window
     {
-        // ----------------------------------------------------
-        // DATENMODELLE
-        // ----------------------------------------------------
         public class Schueler
         {
             public int ID { get; set; }
-            public string Vorname { get; set; } // NEU
-            public string Name { get; set; } // NEU
+            public string Vorname { get; set; } 
+            public string Name { get; set; } 
             public int ErstWahl { get; set; }
             public int ZweitWahl { get; set; }
             public int DrittWahl { get; set; }
@@ -28,14 +25,13 @@ namespace SchuelerErgebnis
             public int MaxTeilnehmer { get; set; }
         }
 
-        // NEU: Eine Klasse für die finale Anzeige im DataGrid
         public class ZuteilungErgebnis
         {
             public string SchuelerName { get; set; }
             public string KursName { get; set; }
         }
 
-        // ... Deine Verbindungsdaten bleiben gleich ...
+
         private string server = "34.32.109.127";
         private string port = "3306";
         private string dbusername = "lehrer-access";
@@ -53,9 +49,9 @@ namespace SchuelerErgebnis
         {
             BTNAusgaben.IsEnabled = false;
             ProtokollListBox.Items.Clear();
-            ErgebnisDataGrid.ItemsSource = null; // DataGrid leeren
+            ErgebnisDataGrid.ItemsSource = null; 
             StatusTextBlock.Text = "Starte Zuteilungsprozess...";
-            MainTabControl.SelectedIndex = 0; // Zum Protokoll-Tab wechseln
+            MainTabControl.SelectedIndex = 0;
 
             try
             {
@@ -67,12 +63,11 @@ namespace SchuelerErgebnis
 
                 StatusTextBlock.Text = "Zuteilung abgeschlossen. Lade finale Ergebnisse aus der DB...";
 
-                // NEU: Finale Ergebnisse aus der DB holen und im DataGrid anzeigen
                 List<ZuteilungErgebnis> finaleErgebnisse = await HoleFinaleZuteilungenAsync();
                 ErgebnisDataGrid.ItemsSource = finaleErgebnisse;
 
                 StatusTextBlock.Text = "Fertig! Ergebnisse wurden erfolgreich geladen.";
-                MainTabControl.SelectedItem = ErgebnisTab; // Zum Ergebnis-Tab wechseln
+                MainTabControl.SelectedItem = ErgebnisTab; 
             }
             catch (Exception ex)
             {
@@ -85,8 +80,6 @@ namespace SchuelerErgebnis
             }
         }
 
-        // Die Methode WeiseKurseZuAsync bleibt fast unverändert...
-        // Kleinigkeit: logNachrichten anpassen, um den vollen Namen anzuzeigen
         private async Task<List<string>> WeiseKurseZuAsync()
         {
             var logNachrichten = new List<string>();
@@ -159,11 +152,6 @@ namespace SchuelerErgebnis
                    aktuelleTeilnehmer[kursId] < kursInfos[kursId].MaxTeilnehmer;
         }
 
-        // ----------------------------------------------------
-        // DATENBANK-METHODEN (asynchron)
-        // ----------------------------------------------------
-
-        // GEÄNDERT: Holt jetzt auch Namen der Schüler
         private async Task<List<Schueler>> HoleSortierteSchuelerAsync()
         {
             var liste = new List<Schueler>();
@@ -190,7 +178,6 @@ namespace SchuelerErgebnis
             return liste;
         }
 
-        // NEU: Holt die finalen Ergebnisse mit Namen aus der DB
         private async Task<List<ZuteilungErgebnis>> HoleFinaleZuteilungenAsync()
         {
             var ergebnisse = new List<ZuteilungErgebnis>();
@@ -222,7 +209,6 @@ namespace SchuelerErgebnis
             return ergebnisse;
         }
 
-        // Die Methoden HoleKurskapazitaetenAsync und SpeichereZuteilungenAsync bleiben unverändert
         private async Task<Dictionary<int, Kurs>> HoleKurskapazitaetenAsync()
         {
             var kurse = new Dictionary<int, Kurs>();
