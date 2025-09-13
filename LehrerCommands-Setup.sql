@@ -1,26 +1,23 @@
 -- Vorarbeit fuer die Abfrageaufgaben mit Usernamen und Passwörtern und einem Platz für Timestamps -- 
 
 CREATE TABLE `schuhler` (
-  `s_ID` int(11) NOT NULL,
+  `s_ID` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `s_Name` varchar(50) NOT NULL,
   `s_Vorname` varchar(50) NOT NULL,
   `s_Klasse` int(11) NOT NULL,
   `s_erstWahl` int(11) DEFAULT NULL,
   `s_zweitWahl` int(11) DEFAULT NULL,
   `s_drittWahl` int(11) DEFAULT NULL,
-  `s_Username` varchar(50) DEFAULT NULL,
-  `s_Password` varchar(50) DEFAULT NULL,
-  `s_Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`s_ID`)
+  `s_Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`,`s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`, `s_Username`, `s_Password`) VALUES
-(1, 'Fiur', 'Jan', 10, 3, 5, 2, 'fiurj', 'amongus123'),
-(2, 'Carstens', 'Max', 9, 5, 1, 4, 'carstensm', 'password456'),
-(3, 'Huß', 'Lena', 11, 3, 1, 2, 'hussl', 'letmein789'),
-(4, 'Bolleininger', 'Larissa', 13, 1, 2, 3, 'bolleiningerl', 'qwertzuiop'),
-(5, 'Stahl', 'Elias', 9, 4, 2, 1, 'stahl', 'asdfghjkl'),
-(6, 'Kisla', 'Sahin', 10, 5, 1, 3, 'kislas', 'zxcvbnm');
+INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`,`s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`, `s_Timestamp`) VALUES
+(1, 'Fiur', 'Jan', 10, 3, 5, 2, NOW()),
+(2, 'Carstens', 'Max', 9, 5, 1, 4, NOW()),
+(3, 'Huß', 'Lena', 11, 3, 1, 2, NOW()),
+(4, 'Bolleininger', 'Larissa', 13, 1, 2, 3, NOW()),
+(5, 'Stahl', 'Elias', 9, 4, 2, 1, NOW()),
+(6, 'Kisla', 'Sahin', 10, 5, 1, 3, NOW());
 
 
 -- Erstellung der Kurse --
@@ -38,6 +35,9 @@ INSERT INTO `kurse` (`k_ID`, `k_Name`, `k_MaxTeilnehmer`) VALUES
 (3, 'Rust Programmierung', 7),
 (4, 'Web3 and Blockchain', 8),
 (5, 'Linux Development', 6);
+
+-- erstellung von Usernamen und Passwörtern --
+
 
 -- -------------------------------------------------------- --
 
@@ -116,3 +116,12 @@ WHERE s_ID = 1;
 UPDATE schuhler
 SET s_Username = NULL, s_Password = NULL
 WHERE s_ID = 1;
+
+-- Erstelle einen Schüler mit Usernamen und Passwort und erstelle einen Timestamp --
+
+INSERT INTO `schuhler` (`s_ID`, `s_Name`, `s_Vorname`, `s_Klasse`, `s_erstWahl`, `s_zweitWahl`, `s_drittWahl`, `s_Username`, `s_Password`, `s_erstellt_am`) VALUES
+(7, 'Mustermann', 'Max', 10, 1, 2, 3, 'mustermannm', 'securepass123', NOW());
+
+-- Erstelle einen Schühler mit Usernamen und Passwort und setzte Timestamp und setzte Namen, Vornamen, Klasse auf NULL--
+
+INSERT INTO `schuhler` (`s_Username`, `s_Password`, `s_erstellt_am`, `s_Name`, `s_Vorname`, `s_Klasse`) VALUES ('mustermannm', 'securepass123', NOW(), NULL, NULL, NULL);
